@@ -572,15 +572,16 @@ def banner(theme=None):
 > Created by Rdimo#6969             ██║  ██║██║  ██║███████╗██║  ██║██║  ██║██████╔╝            ;`'.,_\  `-'-'  /_,.'`;
 > https://Cheataway.com             ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝              '-._  _.-'^'-._  _.-'                                      '''.replace('█', f'{Fore.WHITE}█{Fore.GREEN}') + f'''   
 {Fore.WHITE}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────{Fore.RESET}
-{Fore.RESET}[{Fore.GREEN}1{Fore.RESET}]{Fore.LIGHTBLACK_EX} Nuke Account                                |{Fore.RESET}[{Fore.GREEN}10{Fore.RESET}]{Fore.LIGHTBLACK_EX} Block Friends
-{Fore.RESET}[{Fore.GREEN}2{Fore.RESET}]{Fore.LIGHTBLACK_EX} Unfriend all friends                        |{Fore.RESET}[{Fore.GREEN}11{Fore.RESET}]{Fore.LIGHTBLACK_EX} Profile Changer
-{Fore.RESET}[{Fore.GREEN}3{Fore.RESET}]{Fore.LIGHTBLACK_EX} Delete and leave all servers                |{Fore.RESET}[{Fore.GREEN}12{Fore.RESET}]{Fore.LIGHTBLACK_EX} Angst-Stealer 
-{Fore.RESET}[{Fore.GREEN}4{Fore.RESET}]{Fore.LIGHTBLACK_EX} Spam Create New servers                     |{Fore.RESET}[{Fore.GREEN}13{Fore.RESET}]{Fore.LIGHTBLACK_EX} Hazard-Token-Grabber-V2
-{Fore.RESET}[{Fore.GREEN}5{Fore.RESET}]{Fore.LIGHTBLACK_EX} Dm Deleter                                  |{Fore.RESET}[{Fore.GREEN}14{Fore.RESET}]{Fore.LIGHTBLACK_EX} QR Code grabber
-{Fore.RESET}[{Fore.GREEN}6{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Dm                                     |{Fore.RESET}[{Fore.GREEN}15{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Report
-{Fore.RESET}[{Fore.GREEN}7{Fore.RESET}]{Fore.LIGHTBLACK_EX} Enable Seizure Mode                         |{Fore.RESET}[{Fore.GREEN}16{Fore.RESET}]{Fore.LIGHTBLACK_EX} GroupChat Spammer
-{Fore.RESET}[{Fore.GREEN}8{Fore.RESET}]{Fore.LIGHTBLACK_EX} Get information from a targetted account    |{Fore.RESET}[{Fore.GREEN}17{Fore.RESET}]{Fore.LIGHTBLACK_EX} Webhook Destroyer
-{Fore.RESET}[{Fore.GREEN}9{Fore.RESET}]{Fore.LIGHTBLACK_EX} Log into an account                         |{Fore.RESET}[{Fore.GREEN}18{Fore.RESET}]{Fore.RED} Settings
+{Fore.RESET}[{Fore.GREEN}1{Fore.RESET}]{Fore.LIGHTBLACK_EX} Nuke Account                                |{Fore.RESET}[{Fore.GREEN}11{Fore.RESET}]{Fore.LIGHTBLACK_EX} Profile Changer
+{Fore.RESET}[{Fore.GREEN}2{Fore.RESET}]{Fore.LIGHTBLACK_EX} Unfriend all friends                        |{Fore.RESET}[{Fore.GREEN}12{Fore.RESET}]{Fore.LIGHTBLACK_EX} Angst-Stealer
+{Fore.RESET}[{Fore.GREEN}3{Fore.RESET}]{Fore.LIGHTBLACK_EX} Delete and leave all servers                |{Fore.RESET}[{Fore.GREEN}13{Fore.RESET}]{Fore.LIGHTBLACK_EX} Hazard-Token-Grabber-V2 
+{Fore.RESET}[{Fore.GREEN}4{Fore.RESET}]{Fore.LIGHTBLACK_EX} Spam Create New servers                     |{Fore.RESET}[{Fore.GREEN}14{Fore.RESET}]{Fore.LIGHTBLACK_EX} QR Code grabber
+{Fore.RESET}[{Fore.GREEN}5{Fore.RESET}]{Fore.LIGHTBLACK_EX} Dm Deleter                                  |{Fore.RESET}[{Fore.GREEN}15{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Report
+{Fore.RESET}[{Fore.GREEN}6{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Dm                                     |{Fore.RESET}[{Fore.GREEN}16{Fore.RESET}]{Fore.LIGHTBLACK_EX} Webhook Destroyer
+{Fore.RESET}[{Fore.GREEN}7{Fore.RESET}]{Fore.LIGHTBLACK_EX} Enable Seizure Mode                         |{Fore.RESET}[{Fore.GREEN}17{Fore.RESET}]{Fore.LIGHTBLACK_EX} GroupChat Spammer
+{Fore.RESET}[{Fore.GREEN}8{Fore.RESET}]{Fore.LIGHTBLACK_EX} Get information from a targetted account    |{Fore.RESET}[{Fore.GREEN}18{Fore.RESET}]{Fore.LIGHTBLACK_EX} Dm attack
+{Fore.RESET}[{Fore.GREEN}9{Fore.RESET}]{Fore.LIGHTBLACK_EX} Log into an account                         |{Fore.RESET}[{Fore.GREEN}19{Fore.RESET}]{Fore.LIGHTBLACK_EX} message attack friend
+{Fore.RESET}[{Fore.GREEN}10{Fore.RESET}]{Fore.LIGHTBLACK_EX} Block Friends                              |{Fore.RESET}[{Fore.GREEN}20{Fore.RESET}]{Fore.RED} Settings
 {Fore.WHITE}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────''')
 
 def bannerTheme(type1, type2):
@@ -597,13 +598,14 @@ def bannerTheme(type1, type2):
 > Created by Rdimo#6969             ██║  ██║██║  ██║███████╗██║  ██║██║  ██║██████╔╝            ;`'.,_\  `-'-'  /_,.'`;
 > https://Cheataway.com             ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝              '-._  _.-'^'-._  _.-' ''')+type2('''  
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-[1] Nuke Account                                |[10] Block Friends
-[2] Unfriend all friends                        |[11] Profile Changer
-[3] Delete and leave all servers                |[12] Angst-Stealer
-[4] Spam Create New servers                     |[13] Hazard-Token-Grabber-V2
-[5] Dm Deleter                                  |[14] QR Code grabber
-[6] Mass Dm                                     |[15] Mass Report
-[7] Enable Seizure Mode                         |[16] GroupChat Spammer
-[8] Get information from a targetted account    |[17] Webhook Destroyer
-[9] Log into an account                         |[18] Settings
+[1] Nuke Account                                |[11] Profile Changer
+[2] Unfriend all friends                        |[12] Angst-Stealer
+[3] Delete and leave all servers                |[13] Hazard-Token-Grabber-V2
+[4] Spam Create New servers                     |[14] QR Code grabber
+[5] Dm Deleter                                  |[15] Mass Report
+[6] Mass Dm                                     |[16] Webhook Destroyer
+[7] Enable Seizure Mode                         |[17] GroupChat Spammer
+[8] Get information from a targetted account    |[18] Dm attack
+[9] Log into an account                         |[19] channel Dm attack
+[10] Block Friends                              |[20] Settings
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────''')
