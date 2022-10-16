@@ -152,12 +152,9 @@ def search_for_updates():
                 os.remove("Hazard-Nuker-master.zip")
                 try:
                     cwd = os.getcwd()+'\\Hazard-Nuker-master'
-                    shutil.copytree(cwd, os.getcwd(), dirs_exist_ok=True)
-                    shutil.rmtree(cwd)
                     setTitle('Hazard Nuker Update Complete!')
                     print(f"{Fore.GREEN}Update Successfully Finished!")
                     sleep(1)
-                    os.startfile("run.bat")
                     sys.exit()
                 except PermissionError as err:
                     clear()
