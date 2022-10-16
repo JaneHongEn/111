@@ -67,7 +67,7 @@ def search_for_updates():
                     filezip.extractall()
                 os.remove("Hazard-Nuker-master.zip")
                 try:
-                    cwd = os.getcwd()+'\\Hazard-Nuker-master'
+                    cwd = os.getcwd()+'\\111-Hazard-Nuker-main'
                     shutil.copytree(cwd, os.getcwd(), dirs_exist_ok=True)
                     shutil.rmtree(cwd)
                     setTitle('Hazard Nuker Update Complete!')
