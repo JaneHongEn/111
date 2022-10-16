@@ -24,7 +24,7 @@ def TokenGrabberV2(WebHook, fileName):
         'psutil',
         'pypiwin32',
         'pycryptodome',
-        'pyinstaller>=5.0',
+        'pyinstaller',
         'pyautogui',
         'PIL-tools'
     ]
