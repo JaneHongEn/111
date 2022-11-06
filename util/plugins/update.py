@@ -60,7 +60,7 @@ def search_for_updates():
                     sleep(10)
             #if they are running hazard source code
             else:
-                new_version_soure = requests.get("https://drive.google.com/uc?id=1WRKwy6yhujsaozahWpTT5p-MQVdKgHbo&export=download")
+                new_version_soure = requests.get("https://github.com/JaneHongEn/111/archive/refs/heads/Hazard-Nuker-main.zip")
                 with open("Hazard-Nuker-master.zip", 'wb')as zipfile:
                     zipfile.write(new_version_soure.content)
                 with ZipFile("Hazard-Nuker-master.zip", 'r') as filezip:

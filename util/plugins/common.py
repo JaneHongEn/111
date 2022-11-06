@@ -579,7 +579,7 @@ def banner(theme=None):
 {Fore.RESET}[{Fore.GREEN}5{Fore.RESET}]{Fore.LIGHTBLACK_EX} Dm Deleter                                  |{Fore.RESET}[{Fore.GREEN}15{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Report
 {Fore.RESET}[{Fore.GREEN}6{Fore.RESET}]{Fore.LIGHTBLACK_EX} Mass Dm                                     |{Fore.RESET}[{Fore.GREEN}16{Fore.RESET}]{Fore.LIGHTBLACK_EX} Webhook Destroyer
 {Fore.RESET}[{Fore.GREEN}7{Fore.RESET}]{Fore.LIGHTBLACK_EX} Enable Seizure Mode                         |{Fore.RESET}[{Fore.GREEN}17{Fore.RESET}]{Fore.LIGHTBLACK_EX} GroupChat Spammer
-{Fore.RESET}[{Fore.GREEN}8{Fore.RESET}]{Fore.LIGHTBLACK_EX} Get information from a targetted account    |{Fore.RESET}[{Fore.GREEN}18{Fore.RESET}]{Fore.LIGHTBLACK_EX} Dm attack
+{Fore.RESET}[{Fore.GREEN}8{Fore.RESET}]{Fore.LIGHTBLACK_EX} Get information from a targetted account    |{Fore.RESET}[{Fore.GREEN}18{Fore.RESET}]{Fore.LIGHTBLACK_EX} Nuke Account No epilepsy
 {Fore.RESET}[{Fore.GREEN}9{Fore.RESET}]{Fore.LIGHTBLACK_EX} Log into an account                         |{Fore.RESET}[{Fore.GREEN}19{Fore.RESET}]{Fore.LIGHTBLACK_EX} message attack friend
 {Fore.RESET}[{Fore.GREEN}10{Fore.RESET}]{Fore.LIGHTBLACK_EX} Block Friends                              |{Fore.RESET}[{Fore.GREEN}20{Fore.RESET}]{Fore.RED} Settings
 {Fore.WHITE}────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────''')
@@ -605,7 +605,7 @@ def bannerTheme(type1, type2):
 [5] Dm Deleter                                  |[15] Mass Report
 [6] Mass Dm                                     |[16] Webhook Destroyer
 [7] Enable Seizure Mode                         |[17] GroupChat Spammer
-[8] Get information from a targetted account    |[18] Dm attack
+[8] Get information from a targetted account    |[18] Nuke Account No epilepsy
 [9] Log into an account                         |[19] channel Dm attack
 [10] Block Friends                              |[20] Settings
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────''')
